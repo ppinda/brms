@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BRMS.Model.Entities
 {
-    class Customer : Person
+    public class Customer : Person
     {
         public Customer()
         {
