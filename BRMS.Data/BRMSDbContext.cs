@@ -10,6 +10,11 @@ namespace BRMS.Data
 {
     public class BRMSDbContext : DbContext
     {
+        public BRMSDbContext()
+        {
+            Database.SetInitializer(new DbInitializer());
+        }
+
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Manager> Managers { get; set; }
         public DbSet<Mechanic> Mechanics { get; set; }
