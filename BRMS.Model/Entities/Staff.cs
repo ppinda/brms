@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BRMS.Model.Enums
+namespace BRMS.Model.Entities
 {
-    public enum StaffMemeberType
+    public class Staff : Person
     {
-        Manager,
-        Mechanic
     }
 }

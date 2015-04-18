@@ -13,8 +13,6 @@ namespace BRMS.Model.Entities
             Services = new List<Service>();
         }
 
-        public string PhoneNumber { get; set; }
-
         public virtual ICollection<Service> Services { get; set; }
     }
 }

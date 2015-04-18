@@ -22,8 +22,8 @@ namespace BRMS.Model.Entities
         public int CustomerId { get; set; }
         public virtual Customer Customer { get; set; }
 
-        public int StaffMemberId { get; set; }
-        public virtual StaffMember StaffMember { get; set; }
+        public int MechanicId { get; set; }
+        public virtual Mechanic Mechanic { get; set; }
 
         public int ServicePackageId { get; set; }
         public virtual ServicePackage ServicePackage { get; set; }
