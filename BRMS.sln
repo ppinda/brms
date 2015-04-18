@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRMS.Data", "BRMS.Data\BRMS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRMS.Model", "BRMS.Model\BRMS.Model.csproj", "{8C27A6CD-3133-470A-9846-2C9926CE8308}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRMS.API", "BRMS.API\BRMS.API.csproj", "{2DC0E766-BC1F-4289-8B90-5418CD3E280E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRMS.MVC", "BRMS.MVC\BRMS.MVC.csproj", "{04A089ED-9736-41B3-BD10-5791D3AEFC43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{8C27A6CD-3133-470A-9846-2C9926CE8308}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C27A6CD-3133-470A-9846-2C9926CE8308}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C27A6CD-3133-470A-9846-2C9926CE8308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DC0E766-BC1F-4289-8B90-5418CD3E280E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC0E766-BC1F-4289-8B90-5418CD3E280E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC0E766-BC1F-4289-8B90-5418CD3E280E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC0E766-BC1F-4289-8B90-5418CD3E280E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A089ED-9736-41B3-BD10-5791D3AEFC43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A089ED-9736-41B3-BD10-5791D3AEFC43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A089ED-9736-41B3-BD10-5791D3AEFC43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A089ED-9736-41B3-BD10-5791D3AEFC43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
