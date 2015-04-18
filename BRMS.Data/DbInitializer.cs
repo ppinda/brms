@@ -8,7 +8,7 @@ using BRMS.Model.Entities;
 
 namespace BRMS.Data
 {
-    class DbInitializer : DropCreateDatabaseAlways<BRMSDbContext>
+    public class DbInitializer : DropCreateDatabaseAlways<BRMSDbContext>
     {
         protected override void Seed(BRMSDbContext context)
         {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace BRMS.Model.Entities
 {
@@ -13,6 +14,7 @@ namespace BRMS.Model.Entities
             Services = new List<Service>();
         }
 
+        [JsonIgnore]
         public virtual ICollection<Service> Services { get; set; }
     }
 }

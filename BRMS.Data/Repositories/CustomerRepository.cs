@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
 using BRMS.Model.Entities;
+using BRMS.Data.Interfaces;
 
 namespace BRMS.Data.Repositories
 {
     public class CustomerRepository : DbRepository<Customer>
     {
-        public CustomerRepository(DbContext dbContext) : base(dbContext)
+        public CustomerRepository(IDatabaseFactory dbContext) : base(dbContext)
         {
         }
     }

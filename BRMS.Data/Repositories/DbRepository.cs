@@ -13,10 +13,10 @@ namespace BRMS.Data.Repositories
         DbContext dbContext;
         DbSet<T> dbSet;
 
-        public DbRepository(DbContext dbContext)
+        public DbRepository(IDatabaseFactory databaseFactory)
         {
-            this.dbContext = dbContext;
-            this.dbSet = dbContext.Set<T>();
+            this.dbContext = databaseFactory.Get();
+            this.dbSet = this.dbContext.Set<T>();
         }
 
         public T GetById(int id)
