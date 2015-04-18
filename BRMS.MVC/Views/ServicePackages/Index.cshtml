@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Service packages";
+}
+
+<h2>Index</h2>
+
+<ul id="servicePackages">
+</ul>
+
+<script>
+    $(document).ready(function () {
+        $.getJSON("http://localhost:49552/api/ServicePackages")
+        .done(function (data) {
+            $.each(data, function (key, item) {
+                $('<li>', { text: item.Name }).appendTo($('#servicePackages'));
+            });
+        });
+    });
+</script>
+
