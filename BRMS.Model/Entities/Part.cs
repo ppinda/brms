@@ -10,5 +10,8 @@ namespace BRMS.Model.Entities
     {
         public int Id { get; set; }
         public decimal Price { get; set; }
+
+        public int ServiceId { get; set; }
+        public virtual Service Service { get; set; }
     }
 }

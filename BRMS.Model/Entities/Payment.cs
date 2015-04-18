@@ -12,5 +12,8 @@ namespace BRMS.Model.Entities
         public int Id { get; set; }
         public decimal Total { get; set; }
         public PaymentType Type { get; set; }
+
+        public int ServiceId { get; set; }
+        public virtual Service Service { get; set; }
     }
 }
