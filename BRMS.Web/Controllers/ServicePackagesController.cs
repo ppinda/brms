@@ -7,20 +7,20 @@ using System.Web.Http;
 using BRMS.Data.Interfaces;
 using BRMS.Model.Entities;
 
-namespace BRMS.API.Controllers
+namespace BRMS.Web.Controllers
 {
     public class ServicePackagesController : ApiController
     {
-        IRepository<ServicePackage> servicePackageRepository;
+        IRepository<ServicePackage> _servicePackageRepository;
 
         public ServicePackagesController(IRepository<ServicePackage> servicePackageRepository)
         {
-            this.servicePackageRepository = servicePackageRepository;
+            this._servicePackageRepository = servicePackageRepository;
         }
 
         public IHttpActionResult Get()
         {
-            return Ok(servicePackageRepository.GetAll());
+            return Ok(_servicePackageRepository.GetAll());
         }
     }
 }

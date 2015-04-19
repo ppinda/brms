@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 using BRMS.Data.Interfaces;
 
 namespace BRMS.Data
 {
     public class DatabaseFactory : IDatabaseFactory
     {
-        BRMSDbContext dbContext;
+        DbContext _dbContext;
 
         public DatabaseFactory()
         {
-            dbContext = new BRMSDbContext();
+            _dbContext = new BRMSDbContext();
         }
 
-        public BRMSDbContext Get()
+        public DbContext Get()
         {
-            return dbContext;
+            return _dbContext;
         }
     }
 }

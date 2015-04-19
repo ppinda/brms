@@ -7,7 +7,7 @@ using System.Web.Routing;
 using System.Data.Entity;
 using BRMS.Data;
 
-namespace BRMS.API
+namespace BRMS.Web
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

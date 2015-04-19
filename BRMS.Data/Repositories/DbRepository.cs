@@ -10,46 +10,46 @@ namespace BRMS.Data.Repositories
 {
     public class DbRepository<T> : IRepository<T> where T: class
     {
-        DbContext dbContext;
-        DbSet<T> dbSet;
+        DbContext _dbContext;
+        DbSet<T> _dbSet;
 
-        public DbRepository(IDatabaseFactory databaseFactory)
+        public DbRepository(IDatabaseFactory dbContext)
         {
-            this.dbContext = databaseFactory.Get();
-            this.dbSet = this.dbContext.Set<T>();
+            this._dbContext = dbContext.Get();
+            this._dbSet = this._dbContext.Set<T>();
         }
 
         public T GetById(int id)
         {
-            return dbSet.Find(id);
+            return _dbSet.Find(id);
         }
 
         public IEnumerable<T> GetAll()
         {
-            return dbSet.ToList();
+            return _dbSet.ToList();
         }
 
         public T Add(T entity)
         {
-            dbSet.Add(entity);
+            _dbSet.Add(entity);
 
             return entity;
         }
 
         public void Update(T entity)
         {
-            dbSet.Attach(entity);
-            dbContext.Entry(entity).State = EntityState.Modified;
+            _dbSet.Attach(entity);
+            _dbContext.Entry(entity).State = EntityState.Modified;
         }
 
         public void Delete(T entity)
         {
-            dbSet.Remove(entity);
+            _dbSet.Remove(entity);
         }
 
         public void SaveChanges()
         {
-            dbContext.SaveChanges();
+            _dbContext.SaveChanges();
         }
     }
 }

@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using BRMS.Model.Entities;
-using BRMS.Data.Interfaces;
 
 namespace BRMS.Data
 {

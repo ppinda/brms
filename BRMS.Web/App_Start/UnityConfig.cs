@@ -6,7 +6,7 @@ using BRMS.Data.Repositories;
 using BRMS.Data;
 using BRMS.Model.Entities;
 
-namespace BRMS.API
+namespace BRMS.Web
 {
     public static class UnityConfig
     {
